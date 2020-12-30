@@ -53,7 +53,7 @@
                 <li><a href="javascript:void(0)" onclick="openLoginModal();"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
               </ul>
             </div>
-            
+
           </div>
         </nav>
 
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p style="font-size: 3vw; font-weight: bold;text-align: center;">Movie Ticket is build For CSE391 project.
+            <p style="font-size: 3vw; font-weight: bold;text-align: center;">Movie Ticket is build For DBMS project.
             </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi ut consequuntur inventore! Quisquam sit, ut inventore minima quis rem animi voluptate harum, facilis aliquam earum at praesentium error! Ea.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi ut consequuntur inventore! Quisquam sit, ut inventore minima quis rem animi voluptate harum, facilis aliquam earum at praesentium error! Ea.</p>
@@ -78,7 +78,7 @@
     <div class="container">
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-       
+
       </footer>
     </div>
 
@@ -90,7 +90,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title">Login with</h4>
           </div>
-          <div class="modal-body">  
+          <div class="modal-body">
             <div class="box">
               <div class="content">
                 <div class="social">
@@ -134,7 +134,7 @@
           </div>
           <div class="modal-footer">
             <div class="forgot login-footer">
-              <span>Looking to 
+              <span>Looking to
                 <a href="javascript: showRegisterForm();">create an account</a>
                 ?</span>
               </div>
@@ -142,7 +142,7 @@
                 <span>Already have an account?</span>
                 <a href="javascript: showLoginForm();">Login</a>
               </div>
-            </div>        
+            </div>
           </div>
         </div>
       </div>

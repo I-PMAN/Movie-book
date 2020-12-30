@@ -39,6 +39,7 @@
       <link href="css/rotating-card.css" rel="stylesheet">
       <link href="css/bootstrap-datepicker.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
 <!-- NAVBAR
   ================================================== -->
@@ -76,7 +77,7 @@
                 <li><a href="javascript:void(0)" onclick="openLoginModal();"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
               </ul>
             </div>
-            
+
           </div>
         </nav>
 
@@ -95,7 +96,7 @@
         </thead>
         <tbody>
 
-          <?php 
+          <?php
 
           $movieRes=$conn->query("select * from movielist;");
           while ($movieRow=$movieRes->fetch_object()) {
@@ -107,11 +108,11 @@
               </td>
               <td>
 
-                <?php 
+                <?php
 
                 $movieTime=$conn->query("select * from timeSlot;");
                 while ($movieTimeRow=$movieTime->fetch_object()) {
-                  echo " <span class='label label-primary'>".$movieTimeRow->time."</span>"; 
+                  echo " <span class='label label-primary'>".$movieTimeRow->time."</span>";
 
                 } ?>
               </td>
@@ -142,7 +143,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4>Loging with</h4>
       </div>
-      <div class="modal-body">  
+      <div class="modal-body">
         <div class="box">
           <div class="content">
 
@@ -172,7 +173,7 @@
       </div>
       <div class="modal-footer">
         <div class="forgot login-footer">
-          <span>Looking to 
+          <span>Looking to
             <a href="javascript: showRegisterForm();">create an account</a>
             ?</span>
           </div>
@@ -180,7 +181,7 @@
             <span>Already have an account?</span>
             <a href="javascript: showLoginForm();">Login</a>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
   </div>
@@ -208,7 +209,7 @@
 
       // table showtime
       var $table = $('#fresh-table'),
-      $alertBtn = $('#alertBtn'), 
+      $alertBtn = $('#alertBtn'),
       full_screen = false,
       window_height;
 
@@ -231,9 +232,9 @@
           height: table_height,
           pageSize: 25,
           pageList: [25,50,100],
-          
+
           formatShowingRows: function(pageFrom, pageTo, totalRows){
-              //do nothing here, we don't want to show the text "showing x of y from..." 
+              //do nothing here, we don't want to show the text "showing x of y from..."
             },
             formatRecordsPerPage: function(pageNumber){
               return pageNumber + " rows visible";
@@ -254,7 +255,7 @@
           },
           'click .edit': function (e, value, row, index) {
             alert('You click edit icon, row: ' + JSON.stringify(row));
-            console.log(value, row, index);    
+            console.log(value, row, index);
           },
           'click .remove': function (e, value, row, index) {
             $table.bootstrapTable('remove', {
@@ -272,7 +273,7 @@
 
         $(window).resize(function () {
           $table.bootstrapTable('resetView');
-        });    
+        });
       });
 
 
